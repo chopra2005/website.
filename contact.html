@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        header {
+            background-color: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-image: url('12.jpeg'); /* Add background image */
+            background-size:cover; /* Ensure background image covers the header */
+            background-position: center; /* Center the background image */
+            background-repeat: repeat; /* Prevent background image from repeating */
+        }
+
+        nav {
+            background-color: transparent; /* Change background color to transparent */
+            color: white;
+            padding: 0; /* Remove padding */
+            margin-bottom: 20px; /* Adjust margin */
+            display: flex; /* Display nav items in a row */
+            justify-content: space-between; /* Align items evenly */
+            align-items: center; /* Align items vertically */
+        }
+
+        nav a {
+            color:white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            font-size: 28px;
+            padding: 40px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Change hover color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p{
+            text-align: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Budget travel</h1>
+            <div>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>Home</a>
+                <a href="place.html">
+                    <i class="fa-solid fa-location-dot"></i>Destinations</a>
+                <a href="about.html"><i class="fa-solid fa-address-card"></i>About</a>
+                <a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+            </div>
+        </nav>
+    </header>
+    <h1>Contact Us</h1>
+    <div class="container">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Travel Page. All rights reserved.
+        <p>Email:-Abhaychopra@gmail.com</p>
+        <p>Number:- 9280328433</p>
+        
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            text-align: left;
+            margin: 0;
+        }
+
+        header {
+            background-color: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-image: url('12.jpeg'); /* Add background image */
+            background-size:cover; /* Ensure background image covers the header */
+            background-position: center; /* Center the background image */
+            background-repeat: repeat; /* Prevent background image from repeating */
+        }
+
+        nav {
+            background-color: transparent; /* Change background color to transparent */
+            color: white;
+            padding: 0; /* Remove padding */
+            margin-bottom: 20px; /* Adjust margin */
+            display: flex; /* Display nav items in a row */
+            justify-content: space-between; /* Align items evenly */
+            align-items: center; /* Align items vertically */
+        }
+
+        nav a {
+            color:white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            font-size: 28px;
+            padding: 40px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Change hover color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .destination {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            width: 30%; /* Adjust width */
+        }
+
+        .destination img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add image shadow */
+        }
+
+        .destination h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .destination p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .timetable {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .timetable table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .timetable th, .timetable td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .timetable th {
+            background-color: #333;
+            color: white;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .price-table {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.price-column {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Budget travel</h1>
+            <div>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>Home</a>
+                <a href="place.html">
+                    <i class="fa-solid fa-location-dot"></i>Destinations</a>
+                <a href="about.html"><i class="fa-solid fa-address-card"></i>About</a>
+                <a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="destination">
+            <h2>DELHI, India</h2>
+            <img src="delhi.jpeg" alt="DELHI">
+            <p>Delhi, the capital city of India, is a vibrant tapestry of history, culture, and modernity. Steeped in rich heritage, it showcases a seamless blend of ancient monuments, bustling markets, and cosmopolitan lifestyle.</p>
+        </div>
+        <div class="destination">
+            <h2>CHENNAI, India</h2>
+            <img src="chennai.jpeg" alt="CHENNAI">
+            <p>Chennai, often dubbed the "Gateway to the South," pulsates with a vibrant energy that blends tradition andwhere ancient temples stand tall amidst skyscrapers and sprawling beaches offer solace amidst the urban hustle.</p>
+        </div>
+        <div class="destination">
+            <h2>GOA, India</h2>
+            <img src="goa.jpeg" alt="GOA">
+            <p>Nestled along the sun-kissed shores of the Arabian Sea, Goa beckons with its irresistible blend of pristine beaches, vibrant culture, and laid-back charm. This coastal paradise, known as India's party capital, captivates visitors with its stunning coastline adorned with palm-fringed shores and azure waters.</p>
+        </div>
+    </div>
+    <div class="timetable">
+        <h1>Travel Timetable</h1>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>Arrival in Delhi</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>Exploring historical monuments in Delhi</td>
+            </tr>
+            <tr>
+                <td>Day 3</td>
+                <td>Travel to Agra, visit Taj Mahal</td>
+            </tr>
+            <tr>
+                <td>Day 4</td>
+                <td>Travel to Jaipur, visit Amer Fort</td>
+            </tr>
+            <tr>
+                <td>Day 5</td>
+                <td>Exploring Jaipur city</td>
+            </tr>
+            <tr>
+                <td>Day 6</td>
+                <td>Departure from Jaipur</td>
+            </tr>
+        </table>
+    </div>
+    <div class="price-table">
+        <div class="price-column">
+            <h2>Standard</h2>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1000</p>
+            <ul>
+                <li>Accommodation</li>
+                <li>Meals</li>
+                <li>Tour Guide</li>
+                <li>Transportation</li>
+            </ul>
+            <button class="btn">Book Now</button>
+        </div>
+        <div class="price-column">
+            <h2>Deluxe</h2>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i>2000</p>
+            <ul>
+                <li>Accommodation</li>
+                <li>Meals (Buffet)</li>
+                <li>Personal Guide</li>
+                <li>Private Transportation</li>
+                <li>City Tours</li>
+            </ul>
+            <button class="btn">Book Now</button>
+        </div>
+        <div class="price-column">
+            <h2>Premium</h2>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i>3000</p>
+            <ul>
+                <li>Luxury Accommodation</li>
+                <li>Meals (Fine Dining)</li>
+                <li>Personal Butler</li>
+                <li>Luxury Transportation</li>
+                <li>Exclusive Excursions</li>
+                <li>Spa & Wellness</li>
+            </ul>
+            <button class="btn">Book Now</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Travel Page. All rights reserved.
+    </footer>
+</body>
+</html>

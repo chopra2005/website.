@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+
+        header {
+            background-color: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-image: url('12.jpeg'); /* Add background image */
+            background-size:cover; /* Ensure background image covers the header */
+            background-position: center; /* Center the background image */
+            background-repeat: repeat; /* Prevent background image from repeating */
+        }
+
+        nav {
+            background-color: transparent; /* Change background color to transparent */
+            color: white;
+            padding: 0; /* Remove padding */
+            margin-bottom: 20px; /* Adjust margin */
+            display: flex; /* Display nav items in a row */
+            justify-content: space-between; /* Align items evenly */
+            align-items: center; /* Align items vertically */
+        }
+
+        nav a {
+            color:white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            font-size: 25px;
+            padding: 40px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Change hover color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .destination {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            display: flex; /* Display items in a row */
+            flex-direction: column; /* Align items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+
+        .destination img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .destination p {
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .rating label {
+    font-size: 24px;
+    color: #ffd700; /* Yellow color for stars */
+    cursor: pointer;
+}
+.price-table {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.price-column {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Budget travel</h1>
+            <div>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>Home</a>
+                <a href="place.html">
+                    <i class="fa-solid fa-location-dot"></i>Destinations</a>
+                <a href="about.html"><i class="fa-solid fa-address-card"></i>About</a>
+                <a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+            </div>
+        </nav>
+    </header>
+    <h1>Top Destinations</h1>
+    <div class="container">
+        <div class="destination">
+            <h2>DELHI, India</h2>
+            <img src="DELHI.jpg" alt="DELHI">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+                <label for="star1">☆</label>
+            </div>
+            <p>Delhi, the capital city of India, is a vibrant tapestry of history, culture, and modernity. Steeped in rich heritage, it showcases a seamless blend of ancient monuments, bustling markets, and cosmopolitan lifestyle.</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>4000</p>
+        </div>
+        <div class="destination">
+            <h2>CHENNAI, India</h2>
+            <img src="chennai.jpeg" alt="CHENNAI">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+                <label for="star1">☆</label>
+            </div>
+            <p>Chennai, often dubbed the "Gateway to the South," pulsates with a vibrant energy that blends tradition and modernity seamlessly. Nestled along the Coromandel Coast of the Bay of Bengal, this bustling metropolis is a melting pot of cultures, </p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>5000</p>
+        </div>
+        <div class="destination">
+            <h2>GOA, India</h2>
+            <img src="image.png" alt="GOA">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+               
+            </div>
+            <p>Nestled along the sun-kissed shores of the Arabian Sea, Goa beckons with its irresistible blend of pristine beaches, vibrant culture, and laid-back charm. This coastal paradise, known as India's party capital, captivates visitors with its stunning coastline adorned with palm-fringed shores and azure waters.</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>6000</p>
+        </div>
+        <div class="destination">
+            <h2>srinagar, India</h2>
+            <img src="srinagar.jpg" alt="srinagar">
+                <div class="rating">
+        <label for="star5">☆</label>
+        <label for="star4">☆</label>
+        <label for="star3">☆</label>
+        <label for="star2">☆</label>
+        <label for="star1">☆</label>
+    </div>
+
+            <p>Famously known as 'Heaven on Earth, Srinagar is located in the union territory of Jammu & Kashmir, on the banks of river Jhelum. Srinagar is known for the stationary houseboats and gondola-type rowboats- Shikaras on Dal Lake.</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>8000</p>
+        </div>
+        <div class="destination">
+            <h2>LADAKH, India</h2>
+            <img src="LADAKH.jpg" alt="LADAKH">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+                <label for="star1">☆</label>
+            </div>
+            <p>Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October 2019. Extending from the Siachen Glacier to the main Great Himalayas, Ladakh is a land like no other.</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>15000</p>
+        </div>
+        <div class="destination">
+            <h2>Gangtok, India</h2>
+            <img src="GANGTOK.jpg" alt="Gangtok">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+                
+            </div>
+            <p>Incredibly alluring, pleasantly boisterous and wreathed in clouds - Gangtok, the capital of Sikkim, is one of the most popular hill stations in India. Lying at the height of 1650 m above sea level, the town during its bright sunny days offers spectacular views of Mt. Kanchenjunga</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>10000</p>
+        </div>
+        <div class="destination">
+            <h2>DARJEELING, India</h2>
+            <img src="DARJEELING.jpg" alt="DARJEELING">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+                <label for="star1">☆</label>
+            </div>
+            <p>Darjeeling, the former summer capital of India under the British Raj, has evolved into one of India's most sought-after hill stations. This picturesque hill destination in West Bengal is ideal for a romantic honeymoon. Located around stunning water lakes and enveloped by the Aravalli Hills in all direc...  Udaipur is known for its azure lakes, magnificent palaces, vibrant culture and delectable food.</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>5000</p>
+        </div>
+        <div class="destination">
+            <h2>JAIPUR, India</h2>
+            <img src="JAIPUR.jpg" alt="JAIPUR">
+            <div class="rating">
+                <label for="star5">☆</label>
+                <label for="star4">☆</label>
+                <label for="star3">☆</label>
+                <label for="star2">☆</label>
+                
+            </div>
+            <p>Jaipur, the Pink City of India, is a treasure trove of history, culture, and architectural marvels. From the majestic Amber Fort to the intricately designed City Palace, Jaipur exudes royal grandeur at every turn, making it a must-visit destination for history enthusiasts and culture connoisseurs.</p>
+            <p style="color: black;"><i class="fa-solid fa-indian-rupee-sign"></i>7000</p>
+        </div>
+    </div>
+    <div class="price-table">
+        <div class="price-column">
+            <h2>Standard</h2>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1000</p>
+            <ul>
+                <li>Accommodation</li>
+                <li>Meals</li>
+                <li>Tour Guide</li>
+                <li>Transportation</li>
+            </ul>
+            <button class="btn">Book Now</button>
+        </div>
+        <div class="price-column">
+            <h2>Deluxe</h2>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i>2000</p>
+            <ul>
+                <li>Accommodation</li>
+                <li>Meals (Buffet)</li>
+                <li>Personal Guide</li>
+                <li>Private Transportation</li>
+                <li>City Tours</li>
+            </ul>
+            <button class="btn">Book Now</button>
+        </div>
+        <div class="price-column">
+            <h2>Premium</h2>
+            <p class="price"><i class="fa-solid fa-indian-rupee-sign"></i>3000</p>
+            <ul>
+                <li>Luxury Accommodation</li>
+                <li>Meals (Fine Dining)</li>
+                <li>Personal Butler</li>
+                <li>Luxury Transportation</li>
+                <li>Exclusive Excursions</li>
+                <li>Spa & Wellness</li>
+            </ul>
+            <button class="btn">Book Now</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Travel Page. All rights reserved.
+    </footer>
+</body>
+</html>
